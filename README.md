@@ -7,4 +7,7 @@
 :wavy_dash::wavy_dash::wavy_dash::wavy_dash::wavy_dash::wavy_dash:
 
 **GRADUAAT PROGRAMMEREN ARTEVELDEHOGESCHOOL**
-0nly 3 months ago, I thought **.png** was a :penguin:, but soon I hope to be making some **cool** :poop:
+
+   0nly 3 months ago, I thought **.png** was a :penguin:, but soon I hope to be making some **cool** :poop:
+
+   /github/last-commit/:user/:repo
