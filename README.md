@@ -10,4 +10,3 @@
 
    0nly 3 months ago, I thought **.png** was a :penguin:, but soon I hope to be making some **cool** :poop:
 
-![https://img.shields.io/github/last-commit/pgm-joripeti/opdracht-1-schrauwen-groen-pgm-joripeti?style=for-the-badge](https://github.com/pgmgent-atwork-1/opdracht-1-schrauwen-groen-pgm-joripeti.git)
