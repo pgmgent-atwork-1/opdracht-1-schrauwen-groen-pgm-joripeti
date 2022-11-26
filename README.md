@@ -10,4 +10,4 @@
 
    0nly 3 months ago, I thought **.png** was a :penguin:, but soon I hope to be making some **cool** :poop:
 
-   /github/last-commit/:user/:repo
+   /github/last-commit/:pgm-joripeti/:opdracht-1-schrauwen-groen-pgm-joripeti
