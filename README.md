@@ -1,10 +1,9 @@
 
 
 :wavy_dash::wavy_dash::wavy_dash::wavy_dash::wavy_dash::wavy_dash:
-| Joris                               |
-| Petillion                           |
-| Gender    | :male_sign:             |
-| joripeti@student.arteveldehs.be     |
+:bowtie: Joris | Petillion 
+| Gender | :male_sign:
+| joripeti@student.arteveldehs.be :bowtie:
 :wavy_dash::wavy_dash::wavy_dash::wavy_dash::wavy_dash::wavy_dash:
 
 **GRADUAAT PROGRAMMEREN ARTEVELDEHOGESCHOOL**
