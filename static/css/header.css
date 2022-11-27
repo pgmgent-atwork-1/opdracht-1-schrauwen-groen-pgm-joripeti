@@ -1,0 +1,70 @@
+.usps__list,
+.menu-top__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+} 
+
+.usps__list-item,
+.menu-top__list__item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-right: var(--p4);
+}
+
+.usps__list-item > .icon-check,
+.contact-phone > .icon-phone,
+.contact-email > .icon-envelope {
+  margin-right: var(--p2);
+}
+
+.contact{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+} 
+
+.contact-email,
+.contact-phone {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-right: var(--p4);
+}
+
+.menu-top__list__item {
+  font-family: var(--font-family_Adelle);
+  font-size: var(--font-size-title);
+  font-weight: var(--font-weight-title);
+}
+
+.menu-top__list :nth-child(4) {
+  background-color: var(--color-orange);
+  padding: var(--p2)
+}
+
+.menu-top__list {
+  gap: 2rem;
+}
+
+#contact  {
+  color: var(--color-white);
+}
+
+.logo {
+  /* margin-left: 2.5rem; */
+  align-self: center;
+}
+
+.logo > img {
+  height: 3rem;
+}
+
+.menu-top__list__item {
+  line-height: var(--line-height-menu);
+}
