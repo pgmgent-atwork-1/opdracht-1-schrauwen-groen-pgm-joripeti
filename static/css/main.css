@@ -7,8 +7,10 @@
   --color-green-300: rgb(142, 193, 170);
   --color-green-400: rgb(141, 152, 149);
   --color-green-500: rgb(59, 132, 89); 
-  --color-green-800: rgb(25, 49, 43); 
+  --color-green-divider-line: rgb(116, 187, 159);
+  --color-green-800: rgb(27, 49, 43); 
   --color-grey: rgb(221, 221, 221);
+  --color-green-grey: rgb(138,149,146);
   --font-family_Adelle: 'Adelle Sans CYR'; 
   --font-family_Space: 'Space Grotesk';
   --p: .25rem;
@@ -17,12 +19,17 @@
   --p6: calc(var(--p)*6);
   --p8: calc(var(--p)*8);
   --p10: calc(var(--p)*10);
+  --p15: calc(var(--p)*15);
+  --p20: calc(var(--p)*20);
+  --p23: calc(var(--p)*23);
   --font-size-text: .8rem;
   --font-size-title: 1.1rem; 
   --font-size-big: 1.6rem;  
   --font-weight-text: 400rem;
   --font-weight-title: 900rem;
   --line-height-menu: 2rem;
+  --aspect-ratio-standard: 44/55;
+  --flex-gap-images: 2rem;
 }
 
 body {
@@ -31,6 +38,10 @@ body {
   line-height: 1.56rem;
   font-weight: var(--font-weight-text);
   font-size: var(--font-size-text);
+}
+
+.container {
+  
 }
 
 a {
@@ -52,7 +63,8 @@ h2 {
   padding: var(--p4);
 }
 
-.row {
+.header,
+.header2 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -60,3 +72,9 @@ h2 {
   align-items: baseline;
   margin-bottom: 2rem;
 }
+
+.header2,
+.footer {
+  margin-left: var(--p10);
+}
+

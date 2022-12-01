@@ -1,0 +1,33 @@
+.reference {
+    width: 29%;
+}
+
+.references-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    column-gap: var(--flex-gap-images);
+}
+
+.reference-picture {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+}
+
+.reference-picture > img {
+    width: 100%;
+    aspect-ratio: var(--aspect-ratio-standard);
+    object-fit: cover;
+    object-position: 50% 50%;   
+}
+
+.reference-title {
+    font-family: var(--font-family_Adelle);
+    font-size: var(--font-size-text);
+    font-weight: var(--font-weight-text);
+    line-height: calc(var(--line-height-menu)*1.5);
+    border-bottom: solid var(--color-green-divider-line);
+    margin: var(--p) 0 var(--p10) 0;
+}
