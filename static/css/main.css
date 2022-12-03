@@ -1,12 +1,12 @@
 :root {
   --color-black:  #13322b;
-  --color-orange: rgb(237,116,71);
+  --color-orange: rgb(255, 108, 55);
   --color-white: rgb(255, 255, 255);
-  --color-green-100: rgb(221, 236, 229);
+  --color-green-100: rgb(217, 237, 229);
   --color-green-200: rgb(191, 217, 204);
   --color-green-300: rgb(142, 193, 170);
   --color-green-400: rgb(141, 152, 149);
-  --color-green-500: rgb(59, 132, 89); 
+  --color-green-500: rgb(0, 135, 85);
   --color-green-divider-line: rgb(116, 187, 159);
   --color-green-800: rgb(27, 49, 43); 
   --color-grey: rgb(221, 221, 221);
@@ -25,10 +25,15 @@
   --font-size-text: .8rem;
   --font-size-title: 1.1rem; 
   --font-size-big: 1.6rem;  
+  --font-size-h1: 3rem;
+  --font-size-h2: 2rem;
+  --font-size-h3: 1.2rem;
   --font-weight-text: 400rem;
   --font-weight-title: 900rem;
   --line-height-menu: 2rem;
+  --line-height-text: 1.5rem;
   --aspect-ratio-standard: 44/55;
+  --aspect-ratio-services-body: 3.78/3 ;
   --flex-gap-images: 2rem;
 }
 
@@ -51,10 +56,21 @@ a {
 
 h1 {
   font-family: var(--font-family_Adelle);
-  
+  font-size: var(--font-size-h1);
+  line-height: 3.4rem;
 }
+
 h2 {
-  
+  font-family: var(--font-family_Adelle);
+  font-size: var(--font-size-h2);
+  line-height: 3.4rem;
+}
+
+h3 {
+  font-family: var(--font-family_Adelle);
+  font-size: var(--font-size-h3);
+  line-height: 3.4;
+  color: var(--color-green-500);
 }
 
 .container {
