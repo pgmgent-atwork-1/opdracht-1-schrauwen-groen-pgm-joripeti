@@ -1,0 +1,113 @@
+.form-body {
+    background-color: var(--color-green-100);
+    display: flex;
+    flex-direction: column;
+    gap: var(--p10);
+}
+
+.form-text {
+    display: flex;
+    flex-direction: column;
+    gap: var(--p4);
+    margin-bottom: var(--p6);
+}
+
+.form-text > input {
+    padding-bottom: var(--p2) ;
+}
+
+.form-text > input:focus,
+textarea:focus {
+    border-bottom: calc(var(--p)/3) solid var(--color-border-input-active);
+    border-top: rgba(0, 0, 0, 0%);
+    border-right: rgba(0, 0, 0, 0%);
+    border-left: rgba(0, 0, 0, 0%);
+}
+
+p {
+    font-size: var(--font-size-bigtext);
+}
+
+form {
+    font-size: var(--font-size-bigtext);
+}
+
+fieldset {
+    border: none;
+}
+
+legend, 
+.text-bold,
+.text-fat-underline-orange {
+    font-family: var(--font-family_Adelle);
+    font-weight: bolder;
+}
+
+input,
+textarea {
+    width: 100%;
+    border-top: rgba(0, 0, 0, 0%);
+    border-right: rgba(0, 0, 0, 0%);
+    border-left: rgba(0, 0, 0, 0%);
+    border-bottom: calc(var(--p)/3) solid var(--color-border-input);
+    background-color: rgba(0, 0, 0, 0%);
+    color: var(--color-input);
+}
+
+.radio {
+    gap: var(--p);
+}
+
+.radio-buttons {
+    margin-bottom: var(--p6);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-radio,
+.form-checkbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: var(--p4);
+}
+
+.form-radio > input,
+.form-checkbox > input {
+    width: calc(var(--p4)*0.8);
+}
+
+.form-checkbox {
+    margin: var(--p10) 0;
+}
+
+.form-select-option {
+    display: flex;
+    flex-direction: column;
+    width: calc(var(--p10)*3.75);
+    margin-bottom: var(--p4);
+}
+
+.asterisk-orange {
+    color: var(--color-orange);
+    font-size: calc(var(--font-size-bigtext)*1.2);
+}
+
+#button-orange {
+    display: inline-block;
+    background-color: var(--color-orange);
+    font-family: var(--font-family_Adelle);
+    font-size: var(--font-size-title);
+    font-weight: var(--font-weight-title);
+    padding: var(--p4);
+    margin: 0 var(--p2) var(--p2) 0;
+    line-height: calc(var(--line-height-menu)/2);
+    color: white;
+    text-decoration: none;
+}
+
+.text-fat-underline-orange {
+    text-decoration: underline calc(var(--p)/2) var(--color-orange);
+}

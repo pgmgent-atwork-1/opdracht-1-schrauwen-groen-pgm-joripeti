@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../app/static/css/reset.css">
+    <link rel="stylesheet" href="../app/static/css/fonts.css">
+    <link rel="stylesheet" href="../app/static/css/main.css">
+    <link rel="stylesheet" href="../app/static/css/jumbotron.css">
+    <link rel="stylesheet" href="../app/static/css/header.css">
+    <link rel="stylesheet" href="../app/static/css/footer.css">
+    <link rel="stylesheet" href="../app/static/css/contact.css">
+</head>
+<body>
+
+    <main>
+        <section class="form-body">
+            <article class="form-text">
+                    <h2>Stuur ons een bericht</h2>
+                    <p>Vul onderstaand formulier in om ons een bericht te sturen. We contacteren je zo snel als mogelijk meer informatie voor een gesprek of afspraak.</p>
+            </article>
+            <article class="forms">
+                <form action="" method="get" id="form">
+                    <fieldset>
+                        <legend class="hidden">Type info aanvraag</legend>
+                        <div class="radio">
+                            <div>
+                                <legend class="text-bold">Ik zoek informatie als <span class="asterisk-orange">*</span></legend>
+                            </div>
+                            <div class="radio-buttons">
+                                <div class="form-radio">
+                                    <input type="radio" id="private" name="type" value="particulier" checked>
+                                    <label for="private">Particulier</label>
+                                </div>
+                                <div class="form-radio">
+                                    <input type="radio" id="pro" name="type" value="professional">
+                                    <label for="pro">Bedrijf/instelling</label>
+                                </div>
+                                <div class="form-radio">
+                                    <input type="radio" id="gov" name="type" value="governmental">
+                                    <label for="gov">Openbaar bestuur</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-text">
+                            <label for="company_name" class="text-bold">Bedrijfsnaam/organisatie</label>
+                            <input type="text" id="company_name" name="company_name" value="Uw bedrijf/organisatie">
+                        </div>
+                        <div class="form-select-option">
+                            <label for="province-select" class="text-bold">Provincie <span class="asterisk-orange">*</span></label>
+                            <select id="province-select" name="province">
+                                <option value="">-- Kies uw provincie --</option>
+                                <option value="Antwerpen">Antwerpen</option>
+                                <option value="Henegouwen">Henegouwen</option>
+                                <option value="Limburg">Limburg</option>
+                                <option value="Luik">Luik</option>
+                                <option value="Luxemburg">Luxemburg</option>
+                                <option value="Namen">Namen</option>
+                                <option value="Oost-Vlaanderen">Oost-Vlaanderen</option>
+                                <option value="Vlaams-Brabant">Vlaams-Brabant</option>
+                                <option value="Waals-Brabant">Waals-Brabant</option>
+                                <option value="West-Vlaanderen">West-Vlaanderen</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend class="hidden">Persoonlijke info</legend>
+                        <div class="form-text">
+                            <label for="lastname" class="text-bold">Familienaam <span class="asterisk-orange">*</span></label>
+                            <input type="text" id="lastname" name="lastname" value="Uw familienaam">
+                        </div>
+                        <div class="form-text">
+                            <label for="firstname" class="text-bold">Voornaam <span class="asterisk-orange">*</span></label>
+                            <input type="text" id="firstname" name="firstname" value="Uw voornaam">
+                        </div>
+                        <div class="form-text">
+                            <label for="phone" class="text-bold">Telefoonnummer <span class="asterisk-orange">*</span></label>
+                            <input type="tel" id="phone" name="phone" value="Uw telefoonnummer">
+                        </div>
+                        <div class="form-text">
+                            <label for="email" class="text-bold">E-mailadres <span class="asterisk-orange">*</span></label>
+                            <input type="email" id="email" name="email" value="Uw e-mailadres">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend class="hidden">Bericht</legend>
+                        <div class="form-text">
+                            <label for="message" class="text-bold">Uw bericht <span class="asterisk-orange">*</span></label>
+                            <textarea id="message" name="message" rows="3" cols="70">Uw bericht</textarea>
+                        </div>
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="optin" name="optin" checked>
+                            <label for="optin">Ik ga akkoord met het  <span class="text-fat-underline-orange">Privacybeleid</span></label>
+                        </div>
+                        <div id="button-orange">
+                            <input type="submit" value="Verzenden">
+                        </div>
+                    </fieldset>
+                </form>
+            </article>
+        </section>
+    </main>
+    <script src="../app/static/js/contact.js"></script>
+</body>
+</html>

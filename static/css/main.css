@@ -11,6 +11,9 @@
   --color-green-800: rgb(27, 49, 43); 
   --color-grey: rgb(221, 221, 221);
   --color-green-grey: rgb(138,149,146);
+  --color-border-input: rgb(19, 50, 43);
+  --color-border-input-active: rgb(153, 193, 229);
+  --color-input: rgba(51, 51, 51, 50%);
   --font-family_Adelle: 'Adelle Sans CYR'; 
   --font-family_Space: 'Space Grotesk';
   --p: .25rem;
@@ -23,6 +26,7 @@
   --p20: calc(var(--p)*20);
   --p23: calc(var(--p)*23);
   --font-size-text: .8rem;
+  --font-size-bigtext: calc(var(--font-size-text)*1.2);
   --font-size-title: 1.1rem; 
   --font-size-big: 1.6rem;  
   --font-size-h1: 3rem;
@@ -45,8 +49,8 @@ body {
   font-size: var(--font-size-text);
 }
 
-.container {
-  
+.hidden {
+  display: none;
 }
 
 a {
