@@ -16,8 +16,9 @@
     padding-bottom: var(--p2) ;
 }
 
-.form-text > input:focus,
-textarea:focus {
+.form-text input:focus,
+#message:focus {
+    outline: none;
     border-bottom: calc(var(--p)/3) solid var(--color-border-input-active);
     border-top: rgba(0, 0, 0, 0%);
     border-right: rgba(0, 0, 0, 0%);
@@ -45,7 +46,6 @@ legend,
 
 input,
 textarea {
-    width: 100%;
     border-top: rgba(0, 0, 0, 0%);
     border-right: rgba(0, 0, 0, 0%);
     border-left: rgba(0, 0, 0, 0%);
@@ -53,6 +53,23 @@ textarea {
     background-color: rgba(0, 0, 0, 0%);
     color: var(--color-input);
 }
+
+textarea {
+    width: 100%;
+}
+
+@media (min-width:62rem) {
+    .info-personal .form-text { 
+        width: 49%;
+    }
+    .info-personal {
+        display: flex;
+        flex: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
 
 .radio {
     gap: var(--p);
@@ -90,6 +107,10 @@ textarea {
     margin-bottom: var(--p4);
 }
 
+.form-select-option :nth-child(1) {
+    margin-bottom: var(--p2);
+}
+
 .asterisk-orange {
     color: var(--color-orange);
     font-size: calc(var(--font-size-bigtext)*1.2);
@@ -98,16 +119,23 @@ textarea {
 #button-orange {
     display: inline-block;
     background-color: var(--color-orange);
-    font-family: var(--font-family_Adelle);
-    font-size: var(--font-size-title);
-    font-weight: var(--font-weight-title);
     padding: var(--p4);
     margin: 0 var(--p2) var(--p2) 0;
     line-height: calc(var(--line-height-menu)/2);
+}
+
+input[type=submit] {
     color: white;
     text-decoration: none;
+    font-family: var(--font-family_Space);
+    font-weight: var(--font-weight-fattext);
 }
 
 .text-fat-underline-orange {
-    text-decoration: underline calc(var(--p)/2) var(--color-orange);
+    padding-bottom: calc(var(--p)/4);
+    border-bottom: calc(var(--p)/2) solid var(--color-orange);
+    line-height: var(--line-height-text);
 }
+
+
+
