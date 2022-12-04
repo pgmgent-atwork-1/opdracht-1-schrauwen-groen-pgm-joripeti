@@ -59,24 +59,15 @@
     object-fit: cover;
     width: 100%;
     object-position: 50% 50%;
+    transition: .6s ease;
+}
+
+.body_list_items:hover img{
+    transform: scale(1.2);
 }
 
 .text-body {
     font-family: var(--font-family_Adelle);
     line-height: var(--line-height-text);
     margin: var(--p2) 0;
-}
-
-.button-orange {
-    display: inline-block;
-    background-color: var(--color-orange);
-    font-family: var(--font-family_Adelle);
-    font-size: var(--font-size-title);
-    font-weight: var(--font-weight-title);
-    color: white;
-    padding: var(--p4);
-    text-decoration: none;
-    cursor: pointer;
-    margin: 0 var(--p2) var(--p2) 0;
-    line-height: calc(var(--line-height-menu)/2);
 }
