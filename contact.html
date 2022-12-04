@@ -81,7 +81,7 @@
                     <p>Vul onderstaand formulier in om ons een bericht te sturen. We contacteren je zo snel als mogelijk meer informatie voor een gesprek of afspraak.</p>
             </article>
             <article class="forms">
-                <form action="" method="get" id="form">
+                <form action="" method="post" id="form-contact">
                     <fieldset class="info-type">
                         <legend class="hidden">Type info aanvraag</legend>
                         <div class="radio">
@@ -105,7 +105,7 @@
                         </div>
                         <div class="form-text">
                             <label for="company_name" class="text-bold">Bedrijfsnaam/organisatie</label>
-                            <input type="text" id="company_name" name="company_name" value="Uw bedrijf/organisatie">
+                            <input type="text" id="company_name" name="company_name" placeholder="Uw bedrijf/organisatie">
                         </div>
                         <div class="form-select-option">
                             <label for="province-select" class="text-bold">Provincie <span class="asterisk-orange">*</span></label>
@@ -128,19 +128,19 @@
                         <legend class="hidden">Persoonlijke info</legend>
                         <div class="form-text">
                             <label for="lastname" class="text-bold">Familienaam <span class="asterisk-orange">*</span></label>
-                            <input type="text" id="lastname" name="lastname" value="Uw familienaam">
+                            <input type="text" id="lastname" name="lastname" placeholder="Uw familienaam">
                         </div>
                         <div class="form-text">
                             <label for="firstname" class="text-bold">Voornaam <span class="asterisk-orange">*</span></label>
-                            <input type="text" id="firstname" name="firstname" value="Uw voornaam">
+                            <input type="text" id="firstname" name="firstname" placeholder="Uw voornaam">
                         </div>
                         <div class="form-text">
                             <label for="phone" class="text-bold">Telefoonnummer <span class="asterisk-orange">*</span></label>
-                            <input type="tel" id="phone" name="phone" value="Uw telefoonnummer">
+                            <input type="tel" id="phone" name="phone" placeholder="Uw telefoonnummer">
                         </div>
                         <div class="form-text">
                             <label for="email" class="text-bold">E-mailadres <span class="asterisk-orange">*</span></label>
-                            <input type="email" id="email" name="email" value="Uw e-mailadres">
+                            <input type="email" id="email" name="email" placeholder="Uw e-mailadres">
                         </div>
                     </fieldset>
                     <fieldset>
@@ -150,7 +150,7 @@
                             <textarea id="message" name="message" rows="3" cols="70">Uw bericht</textarea>
                         </div>
                         <div class="form-checkbox">
-                            <input type="checkbox" id="optin" name="optin" checked>
+                            <input type="checkbox" id="optin" name="optin">
                             <label for="optin">Ik ga akkoord met het  <span class="text-fat-underline-orange">Privacybeleid</span></label>
                         </div>
                         <div id="button-orange">

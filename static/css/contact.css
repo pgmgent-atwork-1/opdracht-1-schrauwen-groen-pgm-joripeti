@@ -70,7 +70,6 @@ textarea {
     }
 }
 
-
 .radio {
     gap: var(--p);
 }
@@ -122,6 +121,7 @@ textarea {
     padding: var(--p4);
     margin: 0 var(--p2) var(--p2) 0;
     line-height: calc(var(--line-height-menu)/2);
+    cursor: pointer;
 }
 
 input[type=submit] {
@@ -129,6 +129,7 @@ input[type=submit] {
     text-decoration: none;
     font-family: var(--font-family_Space);
     font-weight: var(--font-weight-fattext);
+    cursor: pointer;
 }
 
 .text-fat-underline-orange {
