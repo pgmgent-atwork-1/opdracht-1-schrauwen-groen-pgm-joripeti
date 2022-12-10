@@ -1,3 +1,7 @@
+.usps {
+  transform: translateX(-2.5rem);
+}
+
 .usps__list,
 .menu-top__list {
   display: flex;
@@ -6,13 +10,23 @@
   list-style: none;
 } 
 
+.usps__list,
 .usps__list-item,
 .menu-top__list__item {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
+  justify-content: space-between;
   margin-right: var(--p4);
+}
+
+.usps__list-item,
+.text-email, 
+.text-phone {
+  font-family: var(--font-family__footer-text);
+  font-size: var(--font-size__body-text);
+  font-weight: var(--font-weight__menu-button);
 }
 
 .usps__list-item > .icon-check,
@@ -34,18 +48,28 @@
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
+}
+
+.contact-email{
   margin-right: var(--p4);
 }
 
 .menu-top__list__item {
-  font-family: var(--font-family_Adelle);
-  font-size: var(--font-size-title);
-  font-weight: var(--font-weight-title);
+  font-family: var(--font-family__menu-large);
+  font-size: var(--font-size__menu-large);
+  font-weight: var(--font-weight__menu-large);
 }
 
 .menu-top__list :nth-child(4) {
   background-color: var(--color-orange);
-  padding: var(--p2)
+  padding: var(--p4);
+  font-family: var(--font-family__menu-button);
+  font-size: var(--font-size__menu-button);
+  font-weight: var(--font-weight__menu-button);
+}
+
+.menu-top__list :nth-child(4):hover {
+  background-color: var(--color-orange-hover);
 }
 
 .menu-top__list {

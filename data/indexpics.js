@@ -5,35 +5,35 @@ const indexpics = [
     },
     {
         image: "static/img/2.jpeg",
-        description: "Non ut quia magnam",
+        description: "Nobis qui aliquam ea sequi natus.",
     },
     {
         image: "static/img/3.jpeg",
-        description: "Non ut quia magnam",
+        description: "Quia debitis hic quis quos accusamus",
     },
     {
         image: "static/img/4.jpeg",
-        description: "Non ut quia magnam",
+        description: "Voluptatem eos dicta enim reiciendis",
     },
     {
         image: "static/img/5.jpeg",
-        description: "Non ut quia magnam",
+        description: "Rem suscipit aut dicta placeat",
     },
     {
         image: "static/img/6.jpeg",
-        description: "Non ut quia magnam",
+        description: "Quis rerum iure. Quo est et. Iste omnis",
     },
     {
         image: "static/img/7.jpeg",
-        description: "Non ut quia magnam",
+        description: "Ut iusto dolores dolore. Sint voluptatem",
     },
     {
         image: "static/img/8.jpeg",
-        description: "Non ut quia magnam",
+        description: "Tenetur voluptatem error at",
     },
     {
         image: "static/img/9.jpeg",
-        description: "Non ut quia magnam",
+        description: "Error quod qui laboriosam",
     },
     
 ]

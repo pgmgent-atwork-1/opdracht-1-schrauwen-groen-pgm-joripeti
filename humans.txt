@@ -1,0 +1,11 @@
+/* TEAM */
+COMIMA (Chief of the Mighty Mancave): Joris Petillion
+From Gent, Belgium
+
+/* THANKS */
+The National Lottery for holding up our hopes for a better human condition (NOT)
+
+/* SITE */
+Last update: ongoing
+Doctype: HTML5
+Written in broken tongue, as there are: HTML, CSS, .Js

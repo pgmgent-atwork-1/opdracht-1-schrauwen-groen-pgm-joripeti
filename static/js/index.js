@@ -26,8 +26,7 @@
                                 <figure>
                                     <img src=${indexpic.image} loading="lazy">
                                     <figcaption>
-                                        <span>${indexpic.description}</span class"indexpic-title">
-                                        <div class="indexpic-title"></div>
+                                        <div class="indexpic-title"><span>${indexpic.description}</span></div>
                                     </figcaption>
                                 </figure>
                             
