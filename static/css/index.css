@@ -76,12 +76,22 @@
     border-bottom: calc(var(--p)/10) solid var(--color-orange);
 }
 
+.story {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: var(--color-green-100);
+}
+
 .story-top {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
     align-items: center;
+    max-width: 90rem;
+    margin: 0 auto;
 }
 
 .story-top__image {
@@ -90,6 +100,15 @@
 
 .story-top-right {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--p8);
+}
+
+.story-top-ul {
+    display: flex;
+    flex-direction: column;
+    gap: var(--p8);
 }
 
 .story-top__image img {
@@ -101,9 +120,77 @@
 .story-top-li {
     display: flex;
     flex-direction: row;
-    gap: var(--p2);
     justify-content: space-between;
     border-bottom: calc(var(--p)/10) solid var(--color-orange);
+    font-family: var(--font-family__menu-button);
+    font-size: var(--font-size-h3);
+    font-weight: var(--font-weight__menu-button);
+    padding-bottom: var(--p4);
+}
+
+.story-top-ul :last-child {
+    border-bottom: none;
+}
+
+.story-bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--p10);
+    margin: calc(var(--p20)*1.4) 0 var(--p23) 0;
+}
+
+.story-bottom h2 {
+    align-self: center;
+}
+
+.story-bottom-lists {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: var(--p10);
+    justify-content: center;
+}
+
+.story-bottom-text {
+    font-family: var(--font-family__footer-text);
+    font-size: var(--font-size__body-text);
+    font-weight: var(--font-weight__text);
+}
+
+.totaalaanpak {
+    max-width: 88rem;
+    margin: 0 auto;
+    padding: var(--p23);
+    border-bottom: calc(var(--p10)) solid var(--color-green-800);
+    background-color: var(--color-green-800);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:center
+}
+
+.totaalaanpak .totaalaanpak-left h4,
+.totaalaanpak .totaalaanpak-left p {
+    color: white;
+}
+
+.totaalaanpak .totaalaanpak-left h2 {
+    color: var(--color-orange);
+}
+
+.totaalaanpak-left { 
+    max-width: 40%;
+}
+
+
+.totaalaanpak-right img {
+    max-width: calc(var(--p23)*5);
+    aspect-ratio: 1/1.2;
+    object-fit: cover;
 }
 
 .experts {
@@ -218,23 +305,6 @@ figure > img {
     display: inline-block;
 }
 
-
-
-
-
-
-
-
-
-
-
-.totaalaanpak-bottom-images {
-    background-image: url('../img/schrauwen\ gevelbord.png');
-    width: 20rem;
-    height: 20rem;
-    background-position: center center;
-}
-
 .indexpic-title {
     font-family: var(--font-family__footer-text);
     font-size: var(--font-size__text);
@@ -247,6 +317,8 @@ figure > img {
 
 .why-us-container {
     background-color: var(--color-green-100);
+    border-bottom: calc(var(--p23)*4) solid var(--color-green-100);
+    padding-top: var(--p15);
 }
 
 .why-us-content-block {
@@ -259,7 +331,6 @@ figure > img {
     gap: var(--flex-gap-images);
     justify-content: space-between;
 }
-
 
 .way-of-working {
     width: 40%;
@@ -290,3 +361,4 @@ figure > img {
     padding-left: .7rem;
     width: 100%;
 }
+

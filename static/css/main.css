@@ -32,8 +32,8 @@
   --font-size-bigtext: calc(var(--font-size-text)*1.2);
   --font-size-big: 1.6rem;  
   --font-size-h1: 3rem;
-  --font-size-h2: 2rem;
-  --font-size-h3: 1.3rem;
+  --font-size-h2: 2.82rem;
+  --font-size-h5: 1.4rem;
   --font-size__menu-large: 1.17rem;
   --font-size__menu-button: 1.1rem;
   --font-size__footer-large: 1rem;
@@ -44,6 +44,7 @@
   --font-weight__text: 300rem;
   --line-height-menu: 2rem;
   --line-height-text: 1.5rem;
+  --line-height-title: 1.8rem;
   --aspect-ratio-standard: 44/55;
   --aspect-ratio-services-body: 3.78/3 ;
   --flex-gap-images: 2rem;
@@ -88,6 +89,20 @@ h3 {
   font-weight: var(--font-weight__menu-large);
   line-height: 3.4;
   color: var(--color-green-500);
+}
+
+h4 {
+  font-family: var(--font-family__menu-large);
+  font-size: var(--font-size__menu-large);
+  font-weight: var(--font-weight__menu-large);
+}
+
+h5 {
+  font-family: var(--font-family__footer-text);
+  font-size: var(--font-size-h5);
+  font-weight: var(--font-weight__menu-button);
+  color: var(--color-orange);
+  line-height: var(--line-height-title);
 }
 
 .container {

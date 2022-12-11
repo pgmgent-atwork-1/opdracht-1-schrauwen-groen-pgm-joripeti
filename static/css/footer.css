@@ -1,3 +1,7 @@
+.footer {
+  transform: translateY(-30rem);
+}
+
 .footer-container {
   background-color: var(--color-green-500);
   display: flex;
