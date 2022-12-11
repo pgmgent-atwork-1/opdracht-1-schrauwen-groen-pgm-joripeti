@@ -126,7 +126,7 @@ h5 {
   margin-left: var(--p10);
 } */
 
-.button-orange {
+.button-orange{
   display: inline-block;
   background-color: var(--color-orange);
   background-color: var(--color-orange);
@@ -142,8 +142,13 @@ h5 {
   line-height: calc(var(--line-height-menu)/2);
 }
 
+.button-orange a {
+  color: white;
+}
+
 .button-orange:hover {
   background-color: var(--color-orange-hover);
+  cursor: pointer;
 }
 
 

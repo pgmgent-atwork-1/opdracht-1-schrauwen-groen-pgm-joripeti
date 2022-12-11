@@ -26,20 +26,20 @@
 }
 
 .what-left {
-    width: 50%;
+    width: 40%;
 }
 
 .what-right {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 40%;
+    width: 50%;
     justify-content: space-between;
 }
 
 .what-right-block {
     padding: var(--p4) 0;
-    width: 90%;
+    width: 45%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -60,7 +60,9 @@
     font-size: var(--font-size__menu-large);
     font-weight: var(--font-weight__menu-large);
     color: var(--color-orange); 
-    display: inline-block;
+    display: block;
+    margin-left: var(--p10);
+    margin-bottom: var(--p4);
 }
 
 
@@ -74,6 +76,18 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     border-bottom: calc(var(--p)/10) solid var(--color-orange);
+    gap: var(--p4);
+    padding: var(--p2) 0 var(--p4) 0;
+}
+
+.what-li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.what-li div {
+    width: var(--p10);
+    height: var(--p10);
 }
 
 .story {
@@ -92,6 +106,7 @@
     align-items: center;
     max-width: 90rem;
     margin: 0 auto;
+    gap:calc(var(--p23)*1.2);
 }
 
 .story-top__image {
@@ -99,7 +114,7 @@
 }
 
 .story-top-right {
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     gap: var(--p8);
@@ -109,6 +124,7 @@
     display: flex;
     flex-direction: column;
     gap: var(--p8);
+    transform: translateX(-2.5rem);
 }
 
 .story-top__image img {
@@ -126,6 +142,11 @@
     font-size: var(--font-size-h3);
     font-weight: var(--font-weight__menu-button);
     padding-bottom: var(--p4);
+}
+
+.story-top-li:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .story-top-ul :last-child {
@@ -221,6 +242,10 @@
     gap: var(--p6);
 }
 
+.indexpics:hover {
+    cursor: pointer;
+}
+
 .index-block-block ul {
     list-style: none;
     display: flex;
@@ -256,6 +281,10 @@
     background-color: var(--color-black);
     padding: var(--p) var(--p4);
     margin: 0 0 var(--p4) var(--p10);
+}
+
+.index-block h2 {
+    padding: var(--p10) 0 var(--p8) 0;
 }
 
 .index-block-block ul li {
@@ -297,7 +326,7 @@
     align-items: baseline;
 }
 
-figure > img {
+figure a > img {
     min-width: calc(var(--p20)*4);
     aspect-ratio: var(--aspect-ratio-standard);
     object-fit: cover;
@@ -360,5 +389,9 @@ figure > img {
     width: calc(var(--p20)*2.3);
     padding-left: .7rem;
     width: 100%;
+}
+
+.why-us-list :last-child {
+    border-bottom: none;
 }
 

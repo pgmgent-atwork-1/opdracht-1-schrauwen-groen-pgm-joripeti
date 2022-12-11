@@ -54,6 +54,11 @@
   margin-right: var(--p4);
 }
 
+.text-email,
+.text-phone {
+  text-decoration: underline;
+}
+
 .menu-top__list__item {
   font-family: var(--font-family__menu-large);
   font-size: var(--font-size__menu-large);
