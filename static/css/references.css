@@ -1,3 +1,52 @@
+.aanleg-top-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: calc(var(--p4)*1.3);
+    gap: var(--p10);
+    margin-bottom: var(--p20);
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: var(--p4);
+}
+
+.aanleg-top :last-child {
+    justify-content: flex-end;
+}
+
+.aanleg-top__menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: var(--p4);
+    font-family: var(--font-family__text-light);
+    width: calc(var(--p20)*2.2);
+}
+
+.aanleg-top__menu,
+.aanleg-top__menu__textblock {
+    margin-top: var(--p8);
+    padding: var(--p4);
+    background-color: white;
+}
+
+.aanleg-top__menu__textblock {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: var(--p4);
+    max-width: 57%;
+    min-width: calc(var(--p20)*4);
+}
+
+.aanleg-top__text {
+    font-family: var(--font-family__text-light);
+    font-size: var(--font-size__menu-large);
+    font-weight: var(--font-weight__text);
+}
+
+
 .reference,
 .reference_b2b {
     width: 29%;
@@ -25,7 +74,7 @@
 }
 
 .reference-title {
-    font-family: var(--font-family_Adelle);
+    font-family: var(--font-family__text-light);
     font-size: var(--font-size-text);
     font-weight: var(--font-weight-text);
     line-height: calc(var(--line-height-menu)*1.5);
@@ -34,7 +83,8 @@
 }
 
 .text-regular {
-    font-size: var(--font-size-title);
+    font-family: var(--font-family__footer-text);
+    font-size: var(--font-size__footer-large);
     margin: var(--p8) 0 var(--p8) 0;
 }
 
@@ -56,9 +106,9 @@
 }
 
 .anchor-titles {
-    font-family: var(--font-family_Adelle);
-    font-size: var(--font-size-title);
-    font-weight: var(--font-weight-title);
+    font-family: var(--font-family__menu-large);
+    font-size: var(--font-size__menu-large);
+    font-weight: var(--font-weight__menu-large);
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -76,6 +126,10 @@
     gap: var(--p4);
 }
 
+.reference-list_title {
+    padding-bottom: var(--p8);
+}
+
 .refsection,
 .refsection-b2b {
     margin: var(--p4) 0;
@@ -84,4 +138,12 @@
 .refsection-b2b {
     padding: var(--p10) 0;
     background-color: var(--color-green-100);
+}
+
+.contact-phone :last-child {
+    transform: translateX(var(--p4));
+}
+
+.last-container {
+    margin-bottom: calc(var(--p23)*3);
 }

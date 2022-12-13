@@ -27,7 +27,7 @@
                         <h2>${aanenonderdatum.title}</h2>
                         <p>${aanenonderdatum.body}<p>
                         </article>
-                        <div class="button-orange">Meer informatie</div>
+                        <div class="button-orange"><a href="#">Meer informatie<a href="#"></div>
                         </article>
                     `
                 }
@@ -37,17 +37,17 @@
             references.length = 6;
             return references.map((reference) =>{
                 return `
-                <article class="refsection">
-                <div class="aanenonder_references-list">
-                    <figure class="reference-picture">
-                        <img src=${reference.image} loading="lazy">
-                        <figcaption>
-                            <h3 class="reference-title">${reference.description}</h3>
-                            <div class="divider-line"><div>
-                        </figcaption>
-                    </figure>
+                <div class="aanleg-refsection">
+                    <div class="aanenonder_references-list">
+                        <figure class="reference-picture">
+                            <img src=${reference.image} loading="lazy">
+                            <figcaption>
+                                <span class="aanleg-reference-title">${reference.description}</span>
+                                <div class="divider-line"><div>
+                            </figcaption>
+                        </figure>
+                    </div>
                 </div>
-                </article>
                 `
             }).join('');
         },

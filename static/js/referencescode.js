@@ -27,7 +27,7 @@
                     <figure class="reference-picture">
                         <img src=${reference.image} loading="lazy">
                         <figcaption>
-                            <h3 class="reference-title">${reference.description}</h3>
+                            <span class="reference-title">${reference.description}</span>
                             <div class="divider-line"><div>
                         </figcaption>
                     </figure>
@@ -44,7 +44,7 @@
                         <figure class="reference-picture">
                             <img src=${reference.image} loading="lazy">
                             <figcaption>
-                                <h3 class="reference-title">${reference.description}</h3>
+                                <span class="reference-title">${reference.description}</span>
                                 <div class="divider-line"><div>
                             </figcaption>
                         </figure>
@@ -61,7 +61,7 @@
                         <figure class="reference-picture">
                             <img src=${reference.image} loading="lazy">
                             <figcaption>
-                                <h3 class="reference-title">${reference.description}</h3>
+                                <span class="reference-title">${reference.description}</span>
                                 <div class="divider-line"><div>
                             </figcaption>
                         </figure>
@@ -75,7 +75,7 @@
                 return `
                 <article class="anchor-container">
                     <img src="static/img/quick-link-icon.svg" loading="lazy">
-                    <article class="anchor-title"> <a href="#${anchorTitle.type}"">${anchorTitle.name}</a></article>
+                    <article class="anchor-title"> <a href="#${anchorTitle.type}">${anchorTitle.name}</a></article>
                 </article>
                 `;
             }).join('');

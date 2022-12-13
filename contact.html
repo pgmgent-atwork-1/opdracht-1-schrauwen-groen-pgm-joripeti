@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../app/static/css/reset.css">
     <link rel="stylesheet" href="../app/static/css/fonts.css">
     <link rel="stylesheet" href="../app/static/css/main.css">
-    <link rel="stylesheet" href="../app/static/css/jumbotron.css">
+    <link rel="stylesheet" href="../app/static/css/index.css">
     <link rel="stylesheet" href="../app/static/css/header.css">
     <link rel="stylesheet" href="../app/static/css/footer.css">
     <link rel="stylesheet" href="../app/static/css/contact.css">
@@ -62,7 +62,7 @@
         </div>
         <div class="header2">
             <div class="logo">
-                <img src="../app/static/img/SchrauwenGroen_Logo_Groen_RGB.svg">
+                <a href="index.html"><img src="../app/static/img/SchrauwenGroen_Logo_Groen_RGB.svg"></a>
             </div>
             <div class="menu-top">
                 <ul class="menu-top__list">
@@ -74,114 +74,126 @@
             </div>
         </div>
     </div>
-        <section class="form-body">
-            <div class="container">
-            <article class="form-text">
-                    <h2>Stuur ons een bericht</h2>
-                    <p>Vul onderstaand formulier in om ons een bericht te sturen. We contacteren je zo snel als mogelijk meer informatie voor een gesprek of afspraak.</p>
-            </article>
-            <article class="forms">
-                <form action="" method="post" id="form-contact">
-                    <fieldset class="info-type">
-                        <legend class="hidden">Type info aanvraag</legend>
-                        <div class="radio">
-                            <div>
-                                <legend class="text-bold">Ik zoek informatie als <span class="asterisk-orange">*</span></legend>
-                            </div>
-                            <div class="radio-buttons">
-                                <div class="form-radio">
-                                    <input type="radio" id="private" name="type" value="particulier" checked>
-                                    <label for="private">Particulier</label>
-                                </div>
-                                <div class="form-radio">
-                                    <input type="radio" id="pro" name="type" value="professional">
-                                    <label for="pro">Bedrijf/instelling</label>
-                                </div>
-                                <div class="form-radio">
-                                    <input type="radio" id="gov" name="type" value="governmental">
-                                    <label for="gov">Openbaar bestuur</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-text">
-                            <label for="company_name" class="text-bold">Bedrijfsnaam/organisatie</label>
-                            <input type="text" id="company_name" name="company_name" placeholder="Uw bedrijf/organisatie">
-                        </div>
-                        <div class="form-select-option">
-                            <label for="province-select" class="text-bold">Provincie <span class="asterisk-orange">*</span></label>
-                            <select id="province-select" name="province">
-                                <option value="">-- Kies uw provincie --</option>
-                                <option value="Antwerpen">Antwerpen</option>
-                                <option value="Henegouwen">Henegouwen</option>
-                                <option value="Limburg">Limburg</option>
-                                <option value="Luik">Luik</option>
-                                <option value="Luxemburg">Luxemburg</option>
-                                <option value="Namen">Namen</option>
-                                <option value="Oost-Vlaanderen">Oost-Vlaanderen</option>
-                                <option value="Vlaams-Brabant">Vlaams-Brabant</option>
-                                <option value="Waals-Brabant">Waals-Brabant</option>
-                                <option value="West-Vlaanderen">West-Vlaanderen</option>
-                            </select>
-                        </div>
-                    </fieldset class="info-send">
-                    <fieldset class="info-personal">
-                        <legend class="hidden">Persoonlijke info</legend>
-                        <div class="form-text">
-                            <label for="lastname" class="text-bold">Familienaam <span class="asterisk-orange">*</span></label>
-                            <input type="text" id="lastname" name="lastname" placeholder="Uw familienaam">
-                        </div>
-                        <div class="form-text">
-                            <label for="firstname" class="text-bold">Voornaam <span class="asterisk-orange">*</span></label>
-                            <input type="text" id="firstname" name="firstname" placeholder="Uw voornaam">
-                        </div>
-                        <div class="form-text">
-                            <label for="phone" class="text-bold">Telefoonnummer <span class="asterisk-orange">*</span></label>
-                            <input type="tel" id="phone" name="phone" placeholder="Uw telefoonnummer">
-                        </div>
-                        <div class="form-text">
-                            <label for="email" class="text-bold">E-mailadres <span class="asterisk-orange">*</span></label>
-                            <input type="email" id="email" name="email" placeholder="Uw e-mailadres">
-                        </div>
-                    </fieldset>
-                    <fieldset>
-                        <legend class="hidden">Bericht</legend>
-                        <div class="form-text">
-                            <label for="message" class="text-bold">Uw bericht <span class="asterisk-orange">*</span></label>
-                            <textarea id="message" name="message" rows="3" cols="70">Uw bericht</textarea>
-                        </div>
-                        <div class="form-checkbox">
-                            <input type="checkbox" id="optin" name="optin">
-                            <label for="optin">Ik ga akkoord met het  <span class="text-fat-underline-orange">Privacybeleid</span></label>
-                        </div>
-                        <div id="button-orange">
-                            <input type="submit" value="Verzenden">
-                        </div>
-                    </fieldset>
-                </form>
-            </article>
+    <div class="aanleg-top">
+        <div class="aanleg-top-content">
+            <div class="aanleg-top__menu">
+                <span><a href="index.html">Home</a></span>
+                <img src="../app/static/img/breadcrumb-divide.svg">
+                <span"><a href="contact.html">Contact</a></span>
             </div>
-        </section>
-        <div class="footer">
-            <div class="row">
-                <div class="footer-container">
-                    <div class="footer-text">
-                        <div class="footer-text_top">
-                            Neem vrijblijvend contact met ons op voor een offerte of meer informatie over een van onze diensten.
+            <div class="aanleg-top__menu__textblock">
+                <h1>Contact</h1>
+                <span class="aanleg-top__text">Wenst u meer informatie over een van onze diensten of wilt u graag een offerte aanvragen? Neem vrijblijvend contact met ons op. We proberen zo snel als mogelijk contact met u op te nemen.</span>
+            </div>
+        </div>
+    </div>
+    <section class="form-body">
+        <div class="container">
+        <article class="form-text">
+                <h2>Stuur ons een bericht</h2>
+                <p>Vul onderstaand formulier in om ons een bericht te sturen. We contacteren je zo snel als mogelijk meer informatie voor een gesprek of afspraak.</p>
+        </article>
+        <article class="forms">
+            <form action="" method="post" id="form-contact">
+                <fieldset class="info-type">
+                    <legend class="hidden">Type info aanvraag</legend>
+                    <div class="radio">
+                        <div>
+                            <legend class="text-bold">Ik zoek informatie als <span class="asterisk-orange">*</span></legend>
                         </div>
-                        <div class="footer-text-bottom">
-                            <div class="footer-tel">
-                                <span class="footer-action">Geef ons een seintje</span>
-                                <span a href="tel:050 28 17 76" id="footer-link">050 28 17 76</span>
+                        <div class="radio-buttons">
+                            <div class="form-radio">
+                                <input type="radio" id="private" name="type" value="particulier" checked>
+                                <label for="private">Particulier</label>
                             </div>
-                            <div class="footer-email">
-                                <span class="footer-action">Stuur ons een mailtje</span>
-                                <span><a href="mailto:info.schrauwen.be" subject="contact via site" title="e-mailadres" id="footer-link">info@schrauwen.be</a></span>
+                            <div class="form-radio">
+                                <input type="radio" id="pro" name="type" value="professional">
+                                <label for="pro">Bedrijf/instelling</label>
+                            </div>
+                            <div class="form-radio">
+                                <input type="radio" id="gov" name="type" value="governmental">
+                                <label for="gov">Openbaar bestuur</label>
                             </div>
                         </div>
                     </div>
-                    <div class="footerimg">
-                        <img src="../app/static/img/footer-cta-image.svg">
+                    <div class="form-text">
+                        <label for="company_name" class="text-bold">Bedrijfsnaam/organisatie</label>
+                        <input type="text" id="company_name" name="company_name" placeholder="Uw bedrijf/organisatie">
                     </div>
+                    <div class="form-select-option">
+                        <label for="province-select" class="text-bold">Provincie <span class="asterisk-orange">*</span></label>
+                        <select id="province-select" name="province">
+                            <option value="">-- Kies uw provincie --</option>
+                            <option value="Antwerpen">Antwerpen</option>
+                            <option value="Henegouwen">Henegouwen</option>
+                            <option value="Limburg">Limburg</option>
+                            <option value="Luik">Luik</option>
+                            <option value="Luxemburg">Luxemburg</option>
+                            <option value="Namen">Namen</option>
+                            <option value="Oost-Vlaanderen">Oost-Vlaanderen</option>
+                            <option value="Vlaams-Brabant">Vlaams-Brabant</option>
+                            <option value="Waals-Brabant">Waals-Brabant</option>
+                            <option value="West-Vlaanderen">West-Vlaanderen</option>
+                        </select>
+                    </div>
+                </fieldset class="info-send">
+                <fieldset class="info-personal">
+                    <legend class="hidden">Persoonlijke info</legend>
+                    <div class="form-text">
+                        <label for="lastname" class="text-bold">Familienaam <span class="asterisk-orange">*</span></label>
+                        <input type="text" id="lastname" name="lastname" placeholder="Uw familienaam">
+                    </div>
+                    <div class="form-text">
+                        <label for="firstname" class="text-bold">Voornaam <span class="asterisk-orange">*</span></label>
+                        <input type="text" id="firstname" name="firstname" placeholder="Uw voornaam">
+                    </div>
+                    <div class="form-text">
+                        <label for="phone" class="text-bold">Telefoonnummer <span class="asterisk-orange">*</span></label>
+                        <input type="tel" id="phone" name="phone" placeholder="Uw telefoonnummer">
+                    </div>
+                    <div class="form-text">
+                        <label for="email" class="text-bold">E-mailadres <span class="asterisk-orange">*</span></label>
+                        <input type="email" id="email" name="email" placeholder="Uw e-mailadres">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend class="hidden">Bericht</legend>
+                    <div class="form-text">
+                        <label for="message" class="text-bold">Uw bericht <span class="asterisk-orange">*</span></label>
+                        <textarea id="message" name="message" rows="3" cols="70">Uw bericht</textarea>
+                    </div>
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="optin" name="optin">
+                        <label for="optin">Ik ga akkoord met het  <span class="text-fat-underline-orange">Privacybeleid</span></label>
+                    </div>
+                    <div id="button-orange">
+                        <input type="submit" value="Verzenden">
+                    </div>
+                </fieldset>
+            </form>
+        </article>
+        </div>
+    </section>
+    <div class="footer">
+        <div class="row">
+            <div class="footer-container">
+                <div class="footer-text">
+                    <div class="footer-text_top">
+                        Neem vrijblijvend contact met ons op voor een offerte of meer informatie over een van onze diensten.
+                    </div>
+                    <div class="footer-text-bottom">
+                        <div class="footer-tel">
+                            <span class="footer-action">Geef ons een seintje</span>
+                            <span class="footer-link1"><a href="tel:050 28 17 76">050 28 17 76</a></span>
+                        </div>
+                        <div class="footer-email">
+                            <span class="footer-action">Stuur ons een mailtje</span>
+                            <span class="footer-link2"><a href="mailto:info.schrauwen.be" subject="contact via site" title="e-mailadres">info@schrauwen.be</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footerimg">
+                    <img src="../app/static/img/footer-cta-image.svg">
                 </div>
             </div>
         </div>
@@ -274,7 +286,7 @@
                         <span class="icon-envelope">
                             <img src="../app/static/img/mail-orange.svg">
                         </span>
-                        <span class="footer_item-text"><a href="mailto:info@schrauwen.be" subject="contact via site" title="e-mailadres">info@schrauwen.be</a></span>
+                        <span class="footer_item-text-contact"><a href="mailto:info@schrauwen.be" subject="contact via site" title="e-mailadres">info@schrauwen.be</a></span>
                 </li>
                 <li>
                     </span>
@@ -282,7 +294,7 @@
                         <span class="icon-phone">
                             <img src="../app/static/img/phone-orange.svg">
                         </span>
-                        <span class="footer_item-text"><a href="tel:050 28 17 76">050 28 17 76</a></span>
+                        <span class="footer_item-text-contact"><a href="tel:050 28 17 76">050 28 17 76</a></span>
                     </span>
                 </li>
                 <li>
@@ -299,7 +311,7 @@
                 <span>Oorspronkelijk design van <a href="https://de-formatie.be/" target="_blank" id="disclaimer-link">De Formatie</a>. Met trots nagemaakt door Joris Petillion voor het vak @work1 in opdracht van Arteveldehogeschool.</span>
             </div>
         </div>
-</div>
+    </div>
     <script src="../app/static/js/contact.js"></script>
 </body>
 </html>

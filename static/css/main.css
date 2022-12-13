@@ -19,6 +19,7 @@
   --font-family__menu-large: 'Space Grotesk'; 
   --font-family__menu-button: 'Adelle Sans CYR Hv'; 
   --font-family__footer-text: 'Adelle Sans Cyr';
+  --font-family__text-light: 'Adelle Sans CYR Lt';
   --p: .25rem;
   --p2: calc(var(--p)*2); 
   --p4: calc(var(--p)*4);
@@ -42,7 +43,7 @@
   --font-weight__menu-button: 600rem;
   --font-weight__menu-large: 500rem;
   --font-weight__text: 300rem;
-  --line-height-menu: 2rem;
+  --line-height-menu: 3rem;
   --line-height-text: 1.5rem;
   --line-height-title: 1.8rem;
   --aspect-ratio-standard: 44/55;
@@ -71,9 +72,10 @@ p {
 }
 
 h1 {
-  font-family: var(--font-family_Adelle);
+  font-family: var(--font-family__menu-large);
   font-size: var(--font-size-h1);
-  line-height: 3.4rem;
+  font-weight: var(--font-weight__menu-button);
+  line-height: var(--line-height-menu);
 }
 
 h2 {
@@ -105,7 +107,9 @@ h5 {
   line-height: var(--line-height-title);
 }
 
-.container {
+.container,
+.last-container {
+/* last-container is on referenties.html only */
   max-width: 90rem;
   margin: 0 auto;
   padding: var(--p4);
@@ -151,4 +155,36 @@ h5 {
   cursor: pointer;
 }
 
+.totaalaanpak {
+  max-width: 88rem;
+  margin: 0 auto;
+  padding: var(--p23);
+  border-bottom: calc(var(--p10)) solid var(--color-green-800);
+  background-color: var(--color-green-800);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items:center
+}
+
+.totaalaanpak .totaalaanpak-left h4,
+.totaalaanpak .totaalaanpak-left p {
+  color: white;
+}
+
+.totaalaanpak .totaalaanpak-left h2 {
+  color: var(--color-orange);
+}
+
+.totaalaanpak-left { 
+  max-width: 40%;
+}
+
+
+.totaalaanpak-right img {
+  max-width: calc(var(--p23)*5);
+  aspect-ratio: 1/1.2;
+  object-fit: cover;
+}
 

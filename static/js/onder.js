@@ -37,12 +37,12 @@
             references.length = 6;
             return references.map((reference) =>{
                 return `
-                <article class="refsection">
+                <article class="onderhoud-refsection">
                 <div class="aanenonder_references-list">
                     <figure class="reference-picture">
                         <img src=${reference.image} loading="lazy">
                         <figcaption>
-                            <h3 class="reference-title">${reference.description}</h3>
+                            <span class="onderhoud-reference-title">${reference.description}</span>
                             <div class="divider-line"><div>
                         </figcaption>
                     </figure>

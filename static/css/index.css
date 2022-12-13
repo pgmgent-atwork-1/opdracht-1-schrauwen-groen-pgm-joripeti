@@ -1,3 +1,7 @@
+.contact-phone :last-child {
+    transform: translateX(var(--p4));
+}
+
 
 .indexpics {
     display: flex;
@@ -181,39 +185,6 @@
     font-weight: var(--font-weight__text);
 }
 
-.totaalaanpak {
-    max-width: 88rem;
-    margin: 0 auto;
-    padding: var(--p23);
-    border-bottom: calc(var(--p10)) solid var(--color-green-800);
-    background-color: var(--color-green-800);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items:center
-}
-
-.totaalaanpak .totaalaanpak-left h4,
-.totaalaanpak .totaalaanpak-left p {
-    color: white;
-}
-
-.totaalaanpak .totaalaanpak-left h2 {
-    color: var(--color-orange);
-}
-
-.totaalaanpak-left { 
-    max-width: 40%;
-}
-
-
-.totaalaanpak-right img {
-    max-width: calc(var(--p23)*5);
-    aspect-ratio: 1/1.2;
-    object-fit: cover;
-}
-
 .experts {
     display: flex;
     gap: var(--flex-gap-images);
@@ -346,7 +317,7 @@ figure a > img {
 
 .why-us-container {
     background-color: var(--color-green-100);
-    border-bottom: calc(var(--p23)*4) solid var(--color-green-100);
+    border-bottom: calc(var(--p23)*3) solid var(--color-green-100);
     padding-top: var(--p15);
 }
 
@@ -394,4 +365,5 @@ figure a > img {
 .why-us-list :last-child {
     border-bottom: none;
 }
+
 

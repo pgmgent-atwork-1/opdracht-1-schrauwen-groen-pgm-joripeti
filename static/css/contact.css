@@ -1,8 +1,67 @@
+
+.aanleg-top {
+    background-image: url('../img/public_4.jpg');
+    background-position: center;
+    background-size: cover;
+    padding-bottom: calc(var(--p23)*1.2);
+}
+
+.aanleg-top-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: calc(var(--p4)*1.3);
+    gap: var(--p10);
+    margin-bottom: var(--p20);
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: var(--p4);
+}
+
+.aanleg-top :last-child {
+    justify-content: flex-end;
+}
+
+.aanleg-top__menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: var(--p4);
+    font-family: var(--font-family__text-light);
+    width: calc(var(--p20)*2.2);
+}
+
+.aanleg-top__menu,
+.aanleg-top__menu__textblock {
+    margin-top: var(--p8);
+    padding: var(--p4);
+    background-color: white;
+}
+
+.aanleg-top__menu__textblock {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: var(--p4);
+    max-width: 40%;
+    min-width: calc(var(--p20)*4);
+}
+
+.aanleg-top__text {
+    font-family: var(--font-family__text-light);
+    font-size: var(--font-size__menu-large);
+    font-weight: var(--font-weight__text);
+}
+
 .form-body {
     background-color: var(--color-green-100);
     display: flex;
     flex-direction: column;
     gap: var(--p10);
+    padding-top: var(--p23);
+    font-family: var(--font-family__menu-large);
+    font-size: var(--font-size__text);
 }
 
 .form-text {
@@ -25,6 +84,10 @@
     border-left: rgba(0, 0, 0, 0%);
 }
 
+.form-text p {
+    width: 50%;
+}
+
 p {
     font-size: var(--font-size-bigtext);
 }
@@ -40,8 +103,7 @@ fieldset {
 legend, 
 .text-bold,
 .text-fat-underline-orange {
-    font-family: var(--font-family_Adelle);
-    font-weight: bolder;
+    font-family: var(--font-family__menu-button);
 }
 
 input,
