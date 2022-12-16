@@ -16,11 +16,11 @@
         generateHTMLForIndexPics() {
             return indexpics.map((indexpic) => {
                 return `
-                    <figure>
-                        <a href="#"><img src=${indexpic.image} loading="lazy"></a>
-                        <figcaption>
-                            <div class="indexpic-title"><span>${indexpic.description}</span></div>
-                        </figcaption>
+                    <figure class="scroll-element">
+                            <a href="#"><img src=${indexpic.image} loading="lazy"></a>
+                            <figcaption>
+                                <div class="indexpic-title"><span>${indexpic.description}</span></div>
+                            </figcaption>
                     </figure>
                 `
             }).join('');

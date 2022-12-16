@@ -83,7 +83,7 @@
             </div>
         </div>
         <div class="index-block">
-            <h2>Experts in groen</h2>
+            <h1>Experts in groen</h1>
             <div class="experts">
                 <div class="experts-left">
                     <p>Met meer dan 60 jaar ervaring in het vak is ons familiebedrijf Schrauwen Groen een betrouwbare partner voor de aanleg en het onderhoud van uw tuin of groenzone. Dit doen we zowel voor particulieren, bedrijven als openbaar bestuur.</p>
@@ -97,7 +97,7 @@
                             <li>Maak uw tuin voorjaarsklaar.</li>
                             <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius alias laborum et fugit voluptate a, ut ipsam dolorem voluptas esse, possimus fugiat placeat libero illo cum! Consequatur dolorem aperiam amet.</li>
                             <li>
-                                <span>Lees Meer</span>
+                                <span>Lees meer</span>
                                 <div>
                                     <img src="../app/static/img/icon-arrow-white.svg">
                                 </div>
@@ -108,7 +108,6 @@
                 </div>
             </div>
         </div>
-
         <div class="what-we-do">
             <div class="what-container">
                 <div class="what-left">
@@ -266,7 +265,16 @@
             <div class="button-orange"><a href="#">Meer informatie</a></div>
         </div>
         <div class="totaalaanpak-right">
-            <img src="../app/static/img/schrauwen-gevelbord.png">
+            <img id="clipped" src="../app/static/img/schrauwen-gevelbord.png">
+            <svg height="0" width="0">
+                <defs>
+                    <clipPath id="cut-outs">
+                        <rect y="170" x="100" width="370" height="370" />
+                        <rect x="137" y="0" width="200" height="190" />
+                        <rect x="0" y="0" width="150" height="370" />
+                    </clipPath>
+                </defs>
+            </svg>
         </div>
     </div>
     <div class="container">
@@ -294,139 +302,143 @@
         </div>
     </div>
     <div class="footer-all">
-        <div class="footer">         
-            <div class="footer-container">
-                <div class="footer-text">
-                    <div class="footer-text_top">
-                        Neem vrijblijvend contact met ons op voor een offerte of meer informatie over een van onze diensten.
-                    </div>
-                    <div class="footer-text-bottom">
-                        <div class="footer-tel">
-                            <span class="footer-action">Geef ons een seintje</span>
-                            <span class="footer-link1"><a href="tel:050 28 17 76">050 28 17 76</a></span>
+        <div class="footer">  
+            <div class="container">       
+                <div class="footer-container">
+                    <div class="footer-text">
+                        <div class="footer-text_top">
+                            Neem vrijblijvend contact met ons op voor een offerte of meer informatie over een van onze diensten.
                         </div>
-                        <div class="footer-email">
-                            <span class="footer-action">Stuur ons een mailtje</span>
-                            <span class="footer-link2"><a href="mailto:info.schrauwen.be" subject="contact via site" title="e-mailadres">info@schrauwen.be</a></span>
+                        <div class="footer-text-bottom">
+                            <div class="footer-tel">
+                                <span class="footer-action">Geef ons een seintje</span>
+                                <span class="footer-link1"><a href="tel:050 28 17 76">050 28 17 76</a></span>
+                            </div>
+                            <div class="footer-email">
+                                <span class="footer-action">Stuur ons een mailtje</span>
+                                <span class="footer-link2"><a href="mailto:info.schrauwen.be" subject="contact via site" title="e-mailadres">info@schrauwen.be</a></span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="footerimg">
-                    <img src="../app/static/img/footer-cta-image.svg">
+                    <div class="footerimg">
+                        <img src="../app/static/img/footer-cta-image.svg">
+                    </div>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <div class="footer-bottom-container">
-                <div class="logo-footer">
-                    <img src="../app/static/img/schrauwen-logo-footer.svg">
+            <div class="container">
+                <div class="footer-bottom-container">
+                    <div class="logo-footer">
+                        <img src="../app/static/img/schrauwen-logo-footer.svg">
+                    </div>
+                    <ul class="footer_list">
+                        <li class="footer-bottom-title">Handige links
+                        </li>
+                        <li class="footer_list-item">
+                            <span class="icon-arrow">
+                                <img src="../app/static/img/arrow-right-orange.svg">
+                            </span>
+                            <span class="footer_item-text">
+                                <a href="aanleg.html">Aanleg</a>
+                            </span>
+                        </li>
+                        <li class="footer_list-item">
+                            <span class="icon-arrow">
+                                <img src="../app/static/img/arrow-right-orange.svg">
+                            </span>
+                            <span class="footer_item-text">
+                                <a href="onderhoud.html">Onderhoud</a>
+                            </span>
+                        </li>
+                        <li class="footer_list-item">
+                            <span class="icon-arrow">
+                                <img src="../app/static/img/arrow-right-orange.svg">
+                            </span>
+                            <span class="footer_item-text">
+                                <a href="contact.html">Contact</a>
+                            </span>
+                        </li>
+                        <li class="footer_list-item">
+                            <span class="icon-arrow">
+                                <img src="../app/static/img/arrow-right-orange.svg">
+                            </span>
+                            <span class="footer_item-text">
+                                <a href="#">Nieuws</a>
+                            </span>
+                        </li>
+                    </ul>
+                    <ul class="footer_list">
+                        <li class="footer-bottom-title">Over Schrauwen Groen</li>
+                        <li class="footer_list-item">
+                            <span class="icon-arrow">
+                                <img src="../app/static/img/arrow-right-orange.svg">
+                            </span>
+                            <span class="footer_item-text">
+                                <a href="#">Werkwijze</a>
+                            </span>
+                        </li>
+                        <li class="footer_list-item">
+                            <span class="icon-arrow">
+                                <img src="../app/static/img/arrow-right-orange.svg">
+                            </span>
+                            <span class="footer_item-text">
+                                <a href="#">Historiek</a>
+                            </span>
+                        </li>
+                        <li class="footer_list-item">
+                            <span class="icon-arrow">
+                                <img src="../app/static/img/arrow-right-orange.svg">
+                            </span>
+                            <span class="footer_item-text">
+                                <a href="#">Team</a>
+                            </span>
+                        </li>
+                        <li class="footer_list-item">
+                            <span class="icon-arrow">
+                                <img src="../app/static/img/arrow-right-orange.svg">
+                            </span>
+                            <span class="footer_item-text">
+                                <a href="#">Jobs</a>
+                            </span>
+                        </li>
+                    </ul>
+                    <ul class="footer_list">
+                        <li class="footer-bottom-title">Contactgegevens</li>
+                        <li class="footer_list-item">
+                            <span class="footer_item-text">
+                                <a href="#">St-Elooisstraat 80, 8020 Ruddervoorde</a>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="contact-email">
+                                <span class="icon-envelope">
+                                    <img src="../app/static/img/mail-orange.svg">
+                                </span>
+                                <span class="footer_item-text-contact"><a href="mailto:info@schrauwen.be" subject="contact via site" title="e-mailadres">info@schrauwen.be</a></span>
+                        </li>
+                        <li>
+                            </span>
+                            <span class="contact-phone">
+                                <span class="icon-phone">
+                                    <img src="../app/static/img/phone-orange.svg">
+                                </span>
+                                <span class="footer_item-text-contact"><a href="tel:050 28 17 76">050 28 17 76</a></span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="footer_item-text">BTW BE 0632 500 871</span>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="footer_list">
-                    <li class="footer-bottom-title">Handige links
-                    </li>
-                    <li class="footer_list-item">
-                        <span class="icon-arrow">
-                            <img src="../app/static/img/arrow-right-orange.svg">
-                        </span>
-                        <span class="footer_item-text">
-                            <a href="aanleg.html">Aanleg</a>
-                        </span>
-                    </li>
-                    <li class="footer_list-item">
-                        <span class="icon-arrow">
-                            <img src="../app/static/img/arrow-right-orange.svg">
-                        </span>
-                        <span class="footer_item-text">
-                            <a href="onderhoud.html">Onderhoud</a>
-                        </span>
-                    </li>
-                    <li class="footer_list-item">
-                        <span class="icon-arrow">
-                            <img src="../app/static/img/arrow-right-orange.svg">
-                        </span>
-                        <span class="footer_item-text">
-                            <a href="contact.html">Contact</a>
-                        </span>
-                    </li>
-                    <li class="footer_list-item">
-                        <span class="icon-arrow">
-                            <img src="../app/static/img/arrow-right-orange.svg">
-                        </span>
-                        <span class="footer_item-text">
-                            <a href="#">Nieuws</a>
-                        </span>
-                    </li>
-                </ul>
-                <ul class="footer_list">
-                    <li class="footer-bottom-title">Over Schrauwen Groen</li>
-                    <li class="footer_list-item">
-                        <span class="icon-arrow">
-                            <img src="../app/static/img/arrow-right-orange.svg">
-                        </span>
-                        <span class="footer_item-text">
-                            <a href="#">Werkwijze</a>
-                        </span>
-                    </li>
-                    <li class="footer_list-item">
-                        <span class="icon-arrow">
-                            <img src="../app/static/img/arrow-right-orange.svg">
-                        </span>
-                        <span class="footer_item-text">
-                            <a href="#">Historiek</a>
-                        </span>
-                    </li>
-                    <li class="footer_list-item">
-                        <span class="icon-arrow">
-                            <img src="../app/static/img/arrow-right-orange.svg">
-                        </span>
-                        <span class="footer_item-text">
-                            <a href="#">Team</a>
-                        </span>
-                    </li>
-                    <li class="footer_list-item">
-                        <span class="icon-arrow">
-                            <img src="../app/static/img/arrow-right-orange.svg">
-                        </span>
-                        <span class="footer_item-text">
-                            <a href="#">Jobs</a>
-                        </span>
-                    </li>
-                </ul>
-                <ul class="footer_list">
-                    <li class="footer-bottom-title">Contactgegevens</li>
-                    <li class="footer_list-item">
-                        <span class="footer_item-text">
-                            <a href="#">St-Elooisstraat 80, 8020 Ruddervoorde</a>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="contact-email">
-                            <span class="icon-envelope">
-                                <img src="../app/static/img/mail-orange.svg">
-                            </span>
-                            <span class="footer_item-text-contact"><a href="mailto:info@schrauwen.be" subject="contact via site" title="e-mailadres">info@schrauwen.be</a></span>
-                    </li>
-                    <li>
-                        </span>
-                        <span class="contact-phone">
-                            <span class="icon-phone">
-                                <img src="../app/static/img/phone-orange.svg">
-                            </span>
-                            <span class="footer_item-text-contact"><a href="tel:050 28 17 76">050 28 17 76</a></span>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="footer_item-text">BTW BE 0632 500 871</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="disclaimer">
-                <!-- <div class="disclaimer-left">
-                    <span>Privacy policy & cookies</span>
-                    <span>Algemene voorwaarden</span>
-                </div> -->
-                <div class="disclaimer-right">
-                    <span>Oorspronkelijk design van <a href="https://de-formatie.be/" target="_blank" id="disclaimer-link">De Formatie</a>. Met trots nagemaakt door Joris Petillion voor het vak @work1 in opdracht van Arteveldehogeschool.</span>
+                <div class="disclaimer">
+                    <!-- <div class="disclaimer-left">
+                        <span>Privacy policy & cookies</span>
+                        <span>Algemene voorwaarden</span>
+                    </div> -->
+                    <div class="disclaimer-right">
+                        <span>Oorspronkelijk design van <a href="https://de-formatie.be/" target="_blank" id="disclaimer-link">De Formatie</a>. Met trots nagemaakt door Joris Petillion voor het vak @work1 in opdracht van Arteveldehogeschool.</span>
+                    </div>
                 </div>
             </div>
         </div>

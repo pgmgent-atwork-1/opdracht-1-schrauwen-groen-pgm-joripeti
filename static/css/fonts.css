@@ -35,7 +35,7 @@
 }
 
 @font-face {
-  font-family: 'Space Grotesk';
+  font-family: 'Space Grotesk Bold';
   src: url('SpaceGrotesk-Bold.woff2') format('woff2'),
       url('SpaceGrotesk-Bold.woff') format('woff');
   font-weight: bold;
@@ -44,7 +44,7 @@
 }
 
 @font-face {
-  font-family: 'Space Grotesk';
+  font-family: 'Space Grotesk 500';
   src: url('../fonts/SpaceGrotesk-Medium.woff2') format('woff2'),
       url('../fonts/SpaceGrotesk-Medium.woff') format('woff');
   font-weight: 500;

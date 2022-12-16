@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  transform: translateX(calc(var(--p4))) translateY(calc(var(--p23)*2));
+  transform: translateY(calc(var(--p23)*2));
   margin-right: var(--p4);
   max-width: 90rem;
   margin: 0 auto;
@@ -28,7 +28,7 @@
   justify-content: space-between;
   max-width: 90rem;
   margin: 0 auto;
-  transform: translateX(-4rem);
+  transform: translateX(-4.7rem);
 }
 
 .button-orange{
@@ -60,7 +60,7 @@
 .footer-link2 a {
   color: var(--color-white);
   font-family: var(--font-family__footer-text);
-  font-size: var(--font-size__footer-large);
+  font-size: var(--font-size__menu-large);
   font-weight: var(--font-weight__text);
   padding-bottom: calc(var(--p)/4);
   border-bottom: calc(var(--p)/2) solid white;
@@ -79,8 +79,8 @@
 .footer-action {
   color: var(--color-green-200);
   font-family: var(--font-family__menu-large);
-  font-size: var(--font-size__menu-button);
-  font-weight:var(--font-weight__menu-large);
+  font-size: var(--font-size__menu-large);
+  font-weight:var(--font-weight__bold);
 }
 
 .footer-text {
@@ -91,9 +91,9 @@
 .footer-text_top {
   color: var(--color-white);
   font-family: var(--font-family__menu-large);
-  font-size: var(--font-size-h3);
-  font-weight: var(--font-weight__menu-large);
-
+  font-size: var(--font-size-big);
+  font-weight: var(--font-weight__bold);
+  line-height: var(--p8);
 }
 
 .footer-text-bottom,
@@ -117,8 +117,8 @@
 .footer-bottom-title {
   font-family: var(--font-family__menu-large);
   color: var(--color-green-300);
-  font-size: var(--font-size__footer-large);
-  font-weight: var(--font-weight__menu-button);
+  font-size: var(--font-size-submedium);
+  font-weight: var(--font-weight__bold);
 }
 
 .footer_list {
@@ -138,7 +138,7 @@
 .footer_item-text,
 .footer_item-text-contact {
   font-family: var(--font-family__footer-text);
-  font-size: var (--font-size-text);
+  font-size: var(--font-size__menu-large);
   font-weight: var(--font-weight__menu-button);
 }
 
@@ -176,7 +176,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   padding: 0 0 var(--p6) var(--p20);
-  transform: translateX(-4rem);
+  transform: translateX(-9rem);
   border-left: var(--p20) solid var(--color-green-800);
   justify-content: flex-start;
 }

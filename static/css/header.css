@@ -21,6 +21,10 @@
   margin-right: var(--p4);
 }
 
+.menu-top__list__item a:hover {
+  color: var(--color-green-500);
+}
+
 .usps__list-item,
 .text-email, 
 .text-phone {
@@ -77,7 +81,7 @@
 .menu-top__list__item {
   font-family: var(--font-family__menu-large);
   font-size: var(--font-size__menu-large);
-  font-weight: var(--font-weight__menu-large);
+  font-weight: var(--font-weight__bold);
 }
 
 .menu-top__list :nth-child(4) {
@@ -85,7 +89,7 @@
   padding: var(--p4);
   font-family: var(--font-family__menu-button);
   font-size: var(--font-size__menu-button);
-  font-weight: var(--font-weight__menu-button);
+  font-weight: var(--font-weight__bold);
   transform: translateX(var(--p4));
 }
 

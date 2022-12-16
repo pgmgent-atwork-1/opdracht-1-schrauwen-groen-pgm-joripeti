@@ -17,7 +17,8 @@
   --color-border-input-active: rgb(153, 193, 229);
   --color-input: rgba(51, 51, 51, 50%);
   --font-family__menu-large: 'Space Grotesk'; 
-  --font-family__menu-button: 'Adelle Sans CYR Hv'; 
+  --font-family__menu-button: 'Adelle Sans CYR'; 
+  --font-family__menu-button-fat: 'Adelle Sans CYR Hv'; 
   --font-family__footer-text: 'Adelle Sans Cyr';
   --font-family__text-light: 'Adelle Sans CYR Lt';
   --p: .25rem;
@@ -31,15 +32,17 @@
   --p23: calc(var(--p)*23);
   --font-size-text: .9401rem;
   --font-size-bigtext: calc(var(--font-size-text)*1.2);
-  --font-size-big: 1.6rem;  
-  --font-size-h1: 3rem;
+  --font-size-h1: 4rem;
   --font-size-h2: 2.82rem;
-  --font-size-h5: 1.4rem;
-  --font-size__menu-large: 1.17rem;
+  --font-size-big: 1.6rem; 
+  --font-size-medium: 1.45rem; 
+  --font-size-submedium: 1.35rem;
+  --font-size__menu-large: 1.20rem;
   --font-size__menu-button: 1.1rem;
   --font-size__footer-large: 1rem;
   --font-size__body-text: .9375rem;
   --font-size__text: .8rem;
+  --font-weight__bold: bold;
   --font-weight__menu-button: 600rem;
   --font-weight__menu-large: 500rem;
   --font-weight__text: 300rem;
@@ -66,23 +69,25 @@ a {
 }
 
 p {
-  font-family: var(--font-family__footer-text);
-  font-size: var(--font-size__body-text);
-  font-weight: var(--font-weight__text);
+  font-family: var(--font-family__text-light);
+  font-size: var(--font-size__menu-button);
+  font-weight: var(--font-weight__menu-large);
 }
 
 h1 {
   font-family: var(--font-family__menu-large);
   font-size: var(--font-size-h1);
-  font-weight: var(--font-weight__menu-button);
+  font-weight: var(--font-weight__bold);
   line-height: var(--line-height-menu);
+  margin: calc(var(--p20)*0.6) 0 calc(var(--p20)*0.35) 0  ;
 }
 
 h2 {
   font-family: var(--font-family__menu-large);
   font-size: var(--font-size-h2);
-  font-weight: var(--font-weight__menu-button);
+  font-weight: var(--font-weight__bold);
   line-height: 3.4rem;
+  margin-bottom: var(--p6);
 }
 
 h3 {
@@ -96,13 +101,14 @@ h3 {
 h4 {
   font-family: var(--font-family__menu-large);
   font-size: var(--font-size__menu-large);
-  font-weight: var(--font-weight__menu-large);
+  font-weight: var(--font-weight__bold);
+  margin-bottom: var(--p6);
 }
 
 h5 {
-  font-family: var(--font-family__footer-text);
-  font-size: var(--font-size-h5);
-  font-weight: var(--font-weight__menu-button);
+  font-family: var(--font-family__menu-large);
+  font-size: var(--font-size-big);
+  font-weight: var(--font-weight__bold);
   color: var(--color-orange);
   line-height: var(--line-height-title);
 }
@@ -122,7 +128,7 @@ h5 {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: baseline;
-  margin-bottom: 2rem;
+  margin: 0 var(--p4) 2rem 0;
 }
 
 /* .header2,
@@ -130,13 +136,12 @@ h5 {
   margin-left: var(--p10);
 } */
 
-.button-orange{
+.button-orange {
   display: inline-block;
   background-color: var(--color-orange);
-  background-color: var(--color-orange);
   padding: var(--p4);
-  font-family: var(--font-family__menu-button);
-  font-size: var(--font-size__body-text);
+  font-family: var(--font-family__menu-button-fat);
+  font-size: var(--font-size__menu-large);
   font-weight: var(--font-weight__menu-button);
   color: white;
   padding: var(--p4);
@@ -144,6 +149,12 @@ h5 {
   cursor: pointer;
   margin: var(--p6) var(--p2) 0 0;
   line-height: calc(var(--line-height-menu)/2);
+}
+
+.button-orange a {
+  font-family: var(--font-family__menu-button);
+  font-size: var(--font-size__menu-button);
+  font-weight: var(--font-weight__bold);
 }
 
 .button-orange a {
@@ -156,9 +167,9 @@ h5 {
 }
 
 .totaalaanpak {
-  max-width: 88rem;
+  /* max-width: 88rem; */
   margin: 0 auto;
-  padding: var(--p23);
+  padding: calc(var(--p23)*0.8);
   border-bottom: calc(var(--p10)) solid var(--color-green-800);
   background-color: var(--color-green-800);
   display: flex;
