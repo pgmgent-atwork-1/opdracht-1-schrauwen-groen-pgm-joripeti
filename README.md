@@ -12,4 +12,4 @@
 
 [LINK TO GITHUB REPO](https://github.com/pgmgent-atwork-1/opdracht-1-schrauwen-groen-pgm-joripeti.git)
 
-[LINK TO PUBLISHED PAGES](https://pgmgent-atwork-1.github.io/opdracht-1-schrauwen-groen-pgm-joripeti/)
+[LINK TO PUBLISHED PAGES](https://pgmgent-atwork-1.github.io/opdracht-1-schrauwen-groen-pgm-joripeti/app/index.html)
