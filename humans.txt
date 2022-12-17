@@ -5,7 +5,9 @@ From Gent, Belgium
 /* THANKS */
 The National Lottery for holding up our hopes for a better human condition (NOT)
 
+The cool professors at Arteveldehogeschool for bearing with me!
+
 /* SITE */
-Last update: ongoing
+Last update: 17 Dec 2022
 Doctype: HTML5
 Written in broken tongue, as there are: HTML, CSS, .Js
