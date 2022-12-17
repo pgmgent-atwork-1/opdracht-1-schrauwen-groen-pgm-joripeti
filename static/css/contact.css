@@ -59,9 +59,26 @@
     display: flex;
     flex-direction: column;
     gap: var(--p10);
-    padding-top: var(--p23);
+    padding: var(--p23) 0 calc(var(--p23)*2) 0;
     font-family: var(--font-family__menu-large);
     font-size: var(--font-size__text);
+}
+
+.info-type {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+@media(min-width:61rem) {
+    .info-type {
+        flex-direction: row;
+    }
+}
+
+.info-type .radio,
+.info-type .form-text {
+    width: 50%;
 }
 
 .form-text {
@@ -85,7 +102,13 @@
 }
 
 .form-text p {
-    width: 50%;
+    width: 100%;
+}
+
+@media(min-width:61rem) {
+    .form-text p {
+        width: 50%;
+    }
 }
 
 p {
@@ -103,7 +126,8 @@ fieldset {
 legend, 
 .text-bold,
 .text-fat-underline-orange {
-    font-family: var(--font-family__menu-button);
+    font-family: var(--font-family__menu-large);
+    font-weight: var(--font-weight__bold);
 }
 
 input,
@@ -157,6 +181,12 @@ textarea {
     width: calc(var(--p4)*0.8);
 }
 
+.form-checkbox > label,
+.text-fat-underline-orange {
+    font-family: var(--font-family__footer-text);
+    font-size: var(--font-size__body-text);
+}
+
 .form-checkbox {
     margin: var(--p10) 0;
 }
@@ -177,21 +207,13 @@ textarea {
     font-size: calc(var(--font-size-bigtext)*1.2);
 }
 
-#button-orange {
-    display: inline-block;
-    background-color: var(--color-orange);
-    padding: var(--p4);
-    margin: 0 var(--p2) var(--p2) 0;
-    line-height: calc(var(--line-height-menu)/2);
-    cursor: pointer;
-}
-
 input[type=submit] {
     color: white;
-    text-decoration: none;
-    font-family: var(--font-family_Space);
-    font-weight: var(--font-weight-fattext);
+    font-family: var(--font-family__menu-button-fat);
+    font-size: var(--font-size__menu-large);
+    font-weight: var(--font-weight__menu-button);
     cursor: pointer;
+    text-decoration: none;
 }
 
 .text-fat-underline-orange {
@@ -199,6 +221,3 @@ input[type=submit] {
     border-bottom: calc(var(--p)/2) solid var(--color-orange);
     line-height: var(--line-height-text);
 }
-
-
-

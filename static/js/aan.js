@@ -19,16 +19,16 @@
             return aanenonderdata.map((aanenonderdatum) => {
                 if (aanenonderdatum.type == "aanleg") {
                     return `
-                        <article class="body_list_items" a href="${aanenonderdatum.buttonlink}">
-                        <article class="image-body">
-                        <img src="${aanenonderdatum.image}" loading="lazy">
-                        </article>
-                        <article class="text-body">
-                        <h2>${aanenonderdatum.title}</h2>
-                        <p>${aanenonderdatum.body}<p>
-                        </article>
-                        <div class="button-orange"><a href="#">Meer informatie<a href="#"></div>
-                        </article>
+                            <article class="body_list_items" a href="${aanenonderdatum.buttonlink}">
+                                <article class="image-body">
+                                    <img src="${aanenonderdatum.image}" loading="lazy">
+                                </article>
+                                <article class="text-body">
+                                    <h2>${aanenonderdatum.title}</h2>
+                                    <p>${aanenonderdatum.body}<p>
+                                </article>
+                                <div class="button-orange"><a href="#">Meer informatie<a href="#"></div>
+                            </article>
                     `
                 }
             }).join('');

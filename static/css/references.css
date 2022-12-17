@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: flex-start;
     padding-left: calc(var(--p4)*1.3);
-    gap: var(--p10);
+    gap: var(--p6);
     margin-bottom: var(--p20);
     max-width: 90rem;
     margin: 0 auto;
@@ -26,8 +26,6 @@
 
 .aanleg-top__menu,
 .aanleg-top__menu__textblock {
-    margin-top: var(--p8);
-    padding: var(--p4);
     background-color: white;
 }
 
@@ -36,8 +34,8 @@
     flex-direction: column;
     flex-wrap: nowrap;
     gap: var(--p4);
-    max-width: 57%;
-    min-width: calc(var(--p20)*4);
+    max-width: 60%;
+    min-width: calc(var(--p20)*5);
 }
 
 .aanleg-top__text {
@@ -77,9 +75,17 @@
     font-family: var(--font-family__text-light);
     font-size: var(--font-size-text);
     font-weight: var(--font-weight-text);
-    line-height: calc(var(--line-height-menu)*1.5);
-    border-bottom: solid var(--color-green-divider-line);
     margin: var(--p) 0 var(--p10) 0;
+}
+
+@media(min-width:61rem) {
+    .reference-title {
+        line-height: calc(var(--line-height-menu)*1.5); 
+    }
+}
+
+.reference-picture figcaption {
+    border-bottom: solid var(--color-green-divider-line);
 }
 
 .text-regular {
